@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--====================UNICONS====================-->
+    <!--====================Unicons====================-->
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>Portfolio</title>
+    <!--==================== Favicon ====================-->
+    <link rel="icon" type="image/x-icon" href="Assets/img/FAVICON.png">
   </head>
   <body>
     <!--==================== HEADER ====================-->
@@ -43,6 +45,11 @@
             <li class="nav__item">
               <a href="#qualification" class="nav__link">
                 <i class="uil uil-check-square"></i>Qualification
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">
+                <i class="uil uil-check-square"></i>Projects
               </a>
             </li>
             <li class="nav__item">
@@ -575,8 +582,68 @@
         </div>
       </section>
 
-      <!--==================== PORTFOLIO ====================-->
-      <section class="portfolio section" id="portfolio"></section>
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">MY most recent work</span>
+
+        <div class="projects__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!--==================== PROJECTS 1
+              ====================-->
+              <div class="projects__content grid swiper-slide">
+                <img src="Assets/img/portfolio1.jpg" alt="" class="projects__img">
+
+                <div class="projects__data">
+                  <h3 class="projects__title">Modern Website</h3>
+                  <p class="projects__description">Website adaptable to all devices and animated interactions</p>
+                  <a href="#" class="button button--flex button--small projects__button">
+                    Demo
+                    <i class="uil uil-arrow-right demo__icon"></i>
+                  </a>
+                </div>
+              </div>
+            <!--==================== PROJECTS 2
+              ====================-->
+              <div class="projects__content grid swiper-slide">
+                <img src="Assets/img/portfolio2.jpg" alt="" class="projects__img">
+
+                <div class="projects__data">
+                  <h3 class="projects__title">Modern Website</h3>
+                  <p class="projects__description">Website adaptable to all devices and animated interactions</p>
+                  <a href="#" class="button button--flex button--small projects__button">
+                    Demo
+                    <i class="uil uil-arrow-right demo__icon"></i>
+                  </a>
+                </div>
+              </div>
+            <!--==================== PROJECTS 3
+              ====================-->
+              <div class="projects__content grid swiper-slide">
+                <img src="Assets/img/portfolio3.jpg" alt="" class="projects__img">
+
+                <div class="projects__data">
+                  <h3 class="projects__title">Modern Website</h3>
+                  <p class="projects__description">Website adaptable to all devices and animated interactions</p>
+                  <a href="#" class="button button--flex button--small projects__button">
+                    Demo
+                    <i class="uil uil-arrow-right demo__icon"></i>
+                  </a>
+                </div>
+              </div>
+          </div>
+           <!-- Add Arrows -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right swiper-projects-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left swiper-projects-icon"></i>
+          </div>
+
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
       <!--==================== PROJECT IN MIND ====================-->
       <section class="project section"></section>
@@ -594,7 +661,7 @@
     <!--==================== SCROLL TOP ====================-->
 
     <!--==================== SWIPER JS ====================-->
-    <script src=""></script>
+    <script src="Assets/js/swiper-bundle.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
