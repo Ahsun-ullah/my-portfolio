@@ -497,17 +497,32 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__html {
+.skills__html,
+.skills__express,
+.skills__ts,
+.skills__bootstrap {
   width: 90%;
 }
-.skills__css {
-  width: 80%;
+
+.skills__js,
+.skills__mongo {
+  width: 85%;
 }
-.skills__js {
-  width: 70%;
-}
+
+.skills__css,
+.skills__mongoose,
+.skills__firebase,
+.skills__tailwind,
 .skills__react {
   width: 80%;
+}
+
+.skills__nodejs,
+.skills__materialui {
+  width: 75%;
+}
+.skills__nodejs {
+  width: 70%;
 }
 
 .skills__close .skills__list {
@@ -516,11 +531,13 @@ img {
 }
 .skills__open .skills__list {
   height: max-content;
-  margin-bottom: var(--mb-0-5);
 }
 
 .skills__open .skills__arrow {
-  transform: rotate(-180deg);
+  transform: rotate(360deg);
+}
+.skills__close .skills__arrow {
+  transform: rotate(180deg);
 }
 
 .framework__name {
