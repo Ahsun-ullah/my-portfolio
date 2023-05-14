@@ -390,6 +390,7 @@ img {
 .button--flex {
   display: inline-flex;
   align-items: center;
+  border: none;
 }
 
 /*==================== ABOUT ====================*/
@@ -433,6 +434,19 @@ img {
 }
 
 /*==================== SKILLS ====================*/
+.skills__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  padding-top: 10px;
+}
+
+.html_img {
+  height: 40px;
+  width: 30px;
+  margin-right: 550px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
 .skills__container {
   row-gap: 0;
 }
@@ -475,11 +489,6 @@ img {
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--mb-0-5);
-}
-
-.skills__name {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
 }
 
 .skills__bar,
@@ -884,6 +893,9 @@ img {
   }
   .skills__title {
     font-size: var(--normal-font-size);
+  }
+  .html_img {
+    padding-left: 2px;
   }
   .qualification__data {
     gap: 0.5rem;

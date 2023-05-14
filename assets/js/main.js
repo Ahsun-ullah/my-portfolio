@@ -30,29 +30,21 @@ function linkAction() {
 navLink.forEach((number) => number.addEventListener("click", linkAction));
 
 /*==================== ACCORDION SKILLS ====================*/
-const skillsContent = document.getElementsByClassName("skills__content1");
-const skillsHeader = document.querySelectorAll(".skills__header");
-console.log(skillsContent);
+// function toggleElement() {
+//   const skillsContent = document.getElementsByClassName("skills__content");
+//   const skillsHeader = document.querySelectorAll(".skills__header");
+//   console.log(skillsContent);
 
-function toggleSkills() {
-  for (let i = 0; i < skillsContent.length; i++) {
-    this.parentNode.className = "skills__content skills__open";
+//   function toggleSkills() {
+//     if ((this.parentNode.className = "skills__content skills__open")) {
+//       this.parentNode.className = "skills__content skills__close";
+//     }
+//   }
 
-    if ((skillsContent[i].className = "skills__open")) {
-      this.parentNode.className = "skills__content skills__close";
-    }
-
-    // this.parentNode.className = "skills__content skills__open";
-    // if ((skillsContent[i].className = "skills__content skills__open")) {
-    //   this.parentNode.className = "skills__content skills__close";
-    // }
-  }
-}
-
-skillsHeader.forEach((e) => {
-  e.addEventListener("click", toggleSkills);
-});
-
+//   skillsHeader.forEach((e) => {
+//     e.addEventListener("click", toggleSkills);
+//   });
+// }
 /*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll("[data-target]"),
   tabContents = document.querySelectorAll("[data-content]");
@@ -90,6 +82,11 @@ let swiper = new Swiper(".projects__container", {
   mousewheel: true,
   keyboard: true,
 });
+
+/*====================form data reset =============================== */
+function resetForm() {
+  document.getElementById("contact__form").reset();
+}
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll("section[id]");
