@@ -586,6 +586,9 @@ img {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
 }
+.graphicsPortfolioText {
+  text-decoration: underline;
+}
 
 .qualification__subtitle {
   display: inline-block;
